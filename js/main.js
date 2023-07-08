@@ -1,6 +1,8 @@
-const toggleMenuElement = document.getElementById('toggle-menu');
-const MenuElement = document.getElementById('menu');
+const ham = document.querySelector('.ham');
+const link = document.querySelector('.menu_link');
+const barras = document.querySelectorAll('.ham span');
 
-toggleMenuElement.addEventListener('click', () => {
-    MenuElement.classList.toggle('menu-show');
+ham.addEventListener('click', () => {
+    link.classList.toggle('active');
+    barras.forEach(child => {child.classList.toggle('anime')});
 });
