@@ -31,7 +31,7 @@
         margin: 0;
         width: 100%;
         display: none;
-        opacity: 0;
+        /*opacity: 0;*/
     }
 
     .menu_link li {
@@ -172,8 +172,6 @@ body{
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    background: url('4935872.jpg') no-repeat center center fixed;
-    background-size: cover;
 } 
 #inicio img {
    
