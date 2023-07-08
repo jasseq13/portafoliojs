@@ -1,5 +1,6 @@
 /*mobile*/
 @media (max-width:768px){
+    
     body{
         overflow: hidden;
     }
@@ -10,7 +11,7 @@
         display: block;
         position: absolute;
         top: 15px;
-        right: 25;
+        right: 25px;
         transition: 0.2s 0.1s;
     }
     .ham:hover{
@@ -19,7 +20,7 @@
     .menu{
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 25px 0;
+        padding: 25px 0;
     }
     .menu_link{
         flex-direction: column;
@@ -32,11 +33,13 @@
         display: none;
         opacity: 0;
     }
+
     .menu_link li {
         width: 100%;
         text-align: center;
         padding: 20px;
     }
+
     @keyframes showmenu {
         from{opacity: o;}
         to{opacity: 1;}
@@ -44,7 +47,7 @@
     }
     .menu_link.active{
         display: flex;
-        animation: showmenu 350ms ease-in-out both;
+        animation:showmenu 350ms ease-in-out both;
     }
     .br-1.anime{
         transform: rotate(-45deg) translate(-10px 8px);
@@ -62,14 +65,7 @@
     
     h1 {
         font-size: 42px;
-    }
-    @media (min-width: 768px){
-        .menu{
-            flex-direction: row;
-           
-        }
-    }
-   
+    } 
 }
 .menu {
 
