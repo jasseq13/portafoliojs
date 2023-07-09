@@ -1,6 +1,8 @@
 /*mobile*/
 @media (max-width:768px){
-    
+   /* body {
+        overflow: hidden;
+    }*/
     .logo{
         padding-left: 25px;
     }
@@ -11,13 +13,12 @@
         right: 25px;
         transition: 0.2s 0.1s;
     }
-    .ham:hover{
-        transform: rotate(360deg);
-    }
+    
     .menu{
         flex-direction: column;
         align-items: flex-start;
         padding: 25px 0;
+    
     }
     .menu_link{
         flex-direction: column;
@@ -28,7 +29,7 @@
         margin: 0;
         width: 100%;
         display: none;
-        /*opacity: 0;*/
+        transition:opacity 5s ease-out;
     }
 
     .menu_link li {
@@ -36,12 +37,14 @@
         text-align: center;
         padding: 20px;
     }
+/*Animaciones*/
 
     @keyframes showmenu {
         from{opacity: o;}
         to{opacity: 1;}
 
     }
+
     .menu_link.active{
         display: flex;
         animation:showmenu 350ms ease-in-out both;
@@ -55,9 +58,14 @@
     .br-3.anime{
         transform: rotate(45deg) translate(-10px -8px);
     }
+    .ham.girar:hover{
+        transform: rotate(360deg);
+    }
 }
 
 /*desktop*/
+
+
 @media(min-width: 1024px){
     
     h1 {
@@ -69,7 +77,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    list-style: none;
+    list-style-type: none;
     justify-content: space-around;
     min-height: 8vh;
     background-color: #3cd1d3;
@@ -87,14 +95,14 @@
 .ham span{
     display: block;
     background-color: #f3f3f3;
-    height: 4px;
-    width: 30;
-    margin: 12px auto;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
     border-radius: 2px;
 }
 .logo {
     display: flexbox;
-    width: 200px;
+    width: 180px;
     text-align: left;
     margin: 0;
     padding: 12px;
@@ -108,13 +116,13 @@
 }
 .menu_link li{
     padding: 0 40px;
-    list-style: none;
+    list-style-type: none;
     transition: 0.3s;
 }
 .menu_link li a {
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color: rgb(241, 235, 235);
     font-weight: 600;
 }
 .menu_link li:hover{
@@ -169,7 +177,7 @@ body{
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    background: url('4935872.jpg') no-repeat center center fixed;
+    background: url("4935872.jpg") no-repeat center center fixed;
     background-size: cover;
 } 
 #inicio img {
@@ -193,7 +201,7 @@ body{
 h1
  {
     text-align: center;
-    font-family: 'Pacifico' , 'Lucida Sans', cursive;
+    font-family: 'Pacifico', 'Lucida Sans', cursive;
 }
 
 #iconos {

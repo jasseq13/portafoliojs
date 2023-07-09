@@ -5,4 +5,5 @@ const barras = document.querySelectorAll('.ham span');
 ham.addEventListener('click', () => {
     link.classList.toggle('active');
     barras.forEach(child => {child.classList.toggle('anime')});
+    ham.classList.toggle('girar');
 });
