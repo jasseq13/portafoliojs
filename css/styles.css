@@ -1,6 +1,6 @@
 /*mobile*/
 @media (max-width:768px){
-   /* body {
+  /* body {
         overflow: hidden;
     }*/
     .logo{
@@ -14,7 +14,7 @@
         transition: 0.2s 0.1s;
     }
     
-    .menu{
+    nav{
         flex-direction: column;
         align-items: flex-start;
         padding: 25px 0;
@@ -37,6 +37,8 @@
         text-align: center;
         padding: 20px;
     }
+}
+
 /*Animaciones*/
 
     @keyframes showmenu {
@@ -61,18 +63,23 @@
     .ham.girar:hover{
         transform: rotate(360deg);
     }
-}
+
 
 /*desktop*/
 
-
+html{
+    box-sizing: border-box;
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
 @media(min-width: 1024px){
     
     h1 {
         font-size: 42px;
     } 
 }
-.menu {
+nav {
 
     border-radius: 5px;
     display: flex;
@@ -177,7 +184,7 @@ body{
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    background: url("4935872.jpg") no-repeat center center fixed;
+    background: url(img/4935872.jpg) no-repeat center center fixed;
     background-size: cover;
 } 
 #inicio img {
